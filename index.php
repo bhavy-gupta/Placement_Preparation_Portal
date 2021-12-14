@@ -1,3 +1,4 @@
+<!--
 <html>
 
 <head>
@@ -16,6 +17,7 @@
                 Login</a>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
         </div>
         <?php
+		/*
 	$con=mysqli_connect("localhost","root","","placementdb");
 	$qry="select * from placement_tbl where expDate>'".date("Y-m-d")."'";
 	
@@ -31,9 +33,10 @@
 		echo "<b>Qualification:</b>".$rows['Qualification']."&nbsp&nbsp&nbsp&nbsp&nbsp  <b>Other Requirements:</b>".$rows['OtherReq']."<br>";
 		echo "</div>";
 	}
-	
+	*/
 	?>
     </div>
 </body>
 
 </html>
+-->
