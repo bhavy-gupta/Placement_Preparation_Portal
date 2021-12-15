@@ -14,6 +14,12 @@ $usname = $_SESSION['user'];
             $("#viewJob").click(function() {
                 $("#contents").load("showJob.php");
             });
+            $("#addCompany").click(function() {
+                $("#contents").load("addCompany.php");
+            });
+            $("#viewCompany").click(function() {
+                $("#contents").load("viewCompany.php");
+            });
             $("#addAlumni").click(function() {
                 $("#contents").load("addAlumni.php");
             });
@@ -23,9 +29,6 @@ $usname = $_SESSION['user'];
 
             $("#ChangePwd").click(function() {
                 $("#contents").load("chngpwd.php");
-            });
-            $("#UpdateRes").click(function() {
-                $("#contents").load("AdmnJobResult.php");
             });
         });
     </script>
@@ -43,10 +46,11 @@ $usname = $_SESSION['user'];
                 <div class="listItem">Welcome <?php echo $usname; ?></div>
                 <div class="listItem"><a id="newJob" href="#"> Create a New Job</a></div>
                 <div class="listItem"><a id="viewJob" href="#"> View Jobs</a></div>
+                <div class="listItem"><a id="addCompany" href="#"> Add Company Details</a></div>
+                <div class="listItem"><a id="viewCompany" href="#">View Company Details</a></div>
                 <div class="listItem"><a id="addAlumni" href="#"> Add a New Alumni</a></div>
                 <div class="listItem"><a id="viewAlumni" href="#"> View Alumnis</a></div>
                 <div class="listItem"><a id="ChangePwd" href="#">Change password</div>
-                <div class="listItem"><a id="UpdateRes" href="#">Update Result</div>
                 <div class="listItem"><button onclick="clickMe()"> Logout </button></div>
             </div>
 
