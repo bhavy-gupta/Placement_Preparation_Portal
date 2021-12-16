@@ -26,6 +26,12 @@ $usname = $_SESSION['user'];
             $("#viewAlumni").click(function() {
                 $("#contents").load("viewAlumni.php");
             });
+            $("#addQuestions").click(function() {
+                $("#contents").load("addQuestions.php");
+            });
+            $("#viewQuestions").click(function() {
+                $("#contents").load("viewQuestions.php");
+            });
 
             $("#ChangePwd").click(function() {
                 $("#contents").load("chngpwd.php");
@@ -50,6 +56,8 @@ $usname = $_SESSION['user'];
                 <div class="listItem"><a id="viewCompany" href="#">View Company Details</a></div>
                 <div class="listItem"><a id="addAlumni" href="#"> Add a New Alumni</a></div>
                 <div class="listItem"><a id="viewAlumni" href="#"> View Alumnis</a></div>
+                <div class="listItem"><a id="addQuestions" href="#"> Add Questions</a></div>
+                <div class="listItem"><a id="viewQuestions" href="#"> View Questions</a></div>
                 <div class="listItem"><a id="ChangePwd" href="#">Change password</div>
                 <div class="listItem"><button onclick="clickMe()"> Logout </button></div>
             </div>
