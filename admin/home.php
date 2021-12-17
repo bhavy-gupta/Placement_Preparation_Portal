@@ -30,7 +30,7 @@ $usname = $_SESSION['user'];
                 $("#contents").load("addQuestions.php");
             });
             $("#viewQuestions").click(function() {
-                $("#contents").load("viewQuestions.php");
+                $("#contents").load("showQuestions.php");
             });
 
             $("#ChangePwd").click(function() {

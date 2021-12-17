@@ -1,3 +1,6 @@
+<?php
+include "admin/db.php";
+?>
 <!doctype html>
 <html lang="en">
 
@@ -48,21 +51,24 @@
 						</ul>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="#">Ongoing / UpComing Drives </a>
+						<a class="nav-link" href="drives.php">Ongoing / UpComing Drives </a>
 					</li>
 					<li class="nav-item">
 						<a class="nav-link" href="#Contact Us">Contact Us</a>
 					</li>
 
 				</ul>
+				<!--
 				<div class="mx-2">
 					<button type="button" class="btn btn-outline-primary me-2" data-bs-toggle="modal" data-bs-target="#Login_Modal">Login</button>
 					<button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#Sign_Up_Modal">Sign Up</button>
 				</div>
+-->
 			</div>
 		</div>
 	</nav>
 	<!--Login Modal -->
+	<!--
 	<div class="modal fade" id="Login_Modal" tabindex="-1" aria-labelledby="Login_ModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
@@ -85,7 +91,9 @@
 			</div>
 		</div>
 	</div>
+-->
 	<!--Sign Up Modal -->
+	<!--
 	<div class="modal fade" id="Sign_Up_Modal" tabindex="-1" aria-labelledby="Sign_Up_ModalLabel" aria-hidden="true">
 		<div class="modal-dialog">
 			<div class="modal-content">
@@ -113,6 +121,7 @@
 			</div>
 		</div>
 	</div>
+-->
 	<div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
 		<div class="carousel-indicators">
 			<button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -121,21 +130,21 @@
 		</div>
 		<div class="carousel-inner">
 			<div class="carousel-item active">
-				<img src="https://source.unsplash.com/1400x500/?html" class="d-block w-100" alt="...">
+				<img src="assets/slide-1.jfif" class="d-block w-100" alt="...">
 				<div class="carousel-caption d-none d-md-block">
 					<h2>Drives </h2>
 					<p> Company names and Details, Bond & Interview</p>
 				</div>
 			</div>
 			<div class="carousel-item">
-				<img src="https://source.unsplash.com/1400x500/?computer" class="d-block w-100" alt="...">
+				<img src="assets/slide-2.jfif" class="d-block w-100" alt="...">
 				<div class="carousel-caption d-none d-md-block">
 					<h2> Previous Papers </h2>
 					<p>Previous year question papers of companies, Interview Questions</p>
 				</div>
 			</div>
 			<div class="carousel-item">
-				<img src="https://source.unsplash.com/1400x500/?coding" class="d-block w-100" alt="...">
+				<img src="assets/slide-3.jfif" class="d-block w-100" alt="...">
 				<div class="carousel-caption d-none d-md-block">
 					<h2>Contact with Alumni's</h2>
 					<p>Can contact with alumni's and clear their doubts </p>
@@ -202,21 +211,10 @@
 			</div>
 		</div>
 	</div>
-	<div class="container">
-		<footer class="py-3 my-4">
-			<ul class="nav justify-content-center border-bottom pb-3 mb-3">
-				<li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
-				<li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
-				<li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Menu</a></li>
-				<li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Contact Us</a></li>
-				<li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Login</a></li>
-				<li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Sign Up</a></li>
-			</ul>
-			<p class="text-center text-muted">© 2021 Made with ❤️ by G17</p>
-		</footer>
-	</div>
 	<div class="mb-3">
-		<div id="Contact Us"></div>
+		<div id="Contact Us">
+			<h2>Contact Us!!!</h2>
+		</div>
 		<label for="exampleFormControlInput1" class="form-label">Name</label>
 		<input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Name"><br>
 		<label for="exampleFormControlInput1" class="form-label">Enter Your Email</label>
